@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--添加商品</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <style>
+        .search_head{
+            background: #FFFCED;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #FFBE7A;
+            text-align: left;
+        }
+        .search_head input{
+            padding:3px 5px;
+        }
+        .search_head button{
+            color: #f3f3f3;
+            background: #2F3B53;
+            border: 0;
+            padding: 5px 10px;
+            margin: -1px 0 0 -4px;
+            border-radius: 3px;
+        }
+        .search_head a.fr{
+            padding: 5px 10px;
+            background: #71B7E6;
+            color: #232323;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+        td{
+            padding:5px 0;
+        }
+        .intro{
+            width:32%;text-align: left;padding:5px 3px;
+        }
+        .intro input{
+            width:100%;
+        }
+        .number{
+            color:#fe0000;
+        }
+        .time{
+            width:118px;
+        }
+        .int{
+            width:125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="_head">
+            <a href="javascript:;" class="block">优质精选商品</a>
+        </p>
+        <!-- 导入信息展现-->
+        <div class="manage" id="manage">
+            <div class="search_head over">
+                <label>关键字：</label>
+                <input type="text"/>
+                <button>搜索</button>
+                <a href="javascript:;" class="block fr">一键淘客后台获取</a>
+            </div>
+            <div class="msg_body">
+                <table border="0">
+                    <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="shop_list" class="checkAll" />
+                        </th>
+                        <th>ID</th>
+                        <th>商品名称</th>
+                        <th>分类</th>
+                        <th>掌柜</th>
+                        <th>原价</th>
+                        <th>折价</th>
+                        <th>店铺</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>淘口令</th>
+                        <th>管理操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="shop_list" value="1" />
+                        </td>
+                        <td>89</td>
+                        <td class="intro">
+                            <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                            <input type="text" style="display:none;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>男装</td>
+                        <td class="name">零点衬衫</td>
+                        <td class="number">138.00</td>
+                        <td class="number">49.00</td>
+                        <td class="number">淘宝</td>
+                        <td class="time">2017-1-1 0:0:0</td>
+                        <td class="time">2017-1-5 23:59:59
+                        <td>￥se845s2￥</td>
+                        <td class="int">
+                            <button>导入商品信息</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- 底部 -->
+                <div class="foot over">
+                <span class="block fl">
+                    <input type="checkbox" name="shop_list" class="checkAll"/>全选/取消
+                </span>
+                    <button class="btn fl bg">状态</button>
+                    <button class="move_btn fl bg">移动</button>
+                    <button class="fl" id='selectBtn' disabled="disabled">删除</button>
+                    <div class="fr over">
+                        <span class="block fl">90条记录</span>
+                        <span class="block fl">1/5页</span>
+                        <ul class="over">
+                            <li class="fl on">1</li>
+                            <li class="fl">2</li>
+                            <li class="fl">3</li>
+                            <li class="fl">4</li>
+                            <li class="fl">5</li>
+                            <li class="fl">下一布</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/table.js"></script>
+    <script>
+        $(function content(e){//修改
+            $('.revise').click(function(){
+                var me=$(this);
+                var span=me.siblings('span');
+                var val=span.html();
+                span.hide();
+                me.hide();
+                var input=me.siblings('input');
+                input.show().val(val).focus();
+                input.focusout(function(){
+                    var text=$(this).val();
+                    //console.log(text);
+                    $(this).hide();
+                    me.show();
+                    span.show().html(text);
+                })
+            })
+        });
+    </script>
+</body>
+</html>

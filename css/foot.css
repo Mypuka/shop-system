@@ -1,0 +1,84 @@
+/*头*/
+._head{
+    text-align: left;padding:10px;border-bottom: 1px solid #EEEEEE;
+}
+._head a{
+    padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+    margin-right:10px;
+}
+._head a.bg{
+
+
+    background: #fe6666;;
+}
+/*页脚*/
+div.foot{
+    background:#FFFFE1;padding:8px 10px 8px 0;
+    width:100%;position:fixed;bottom:0;z-index:999;
+}
+div.foot>span{
+    padding-left:12px;margin-top:5px;
+}
+div.foot button{
+    margin:0 5px;color:#f3f3f3;border:0;border-radius:4px;padding:6px 15px;
+}
+div.foot button.bg{
+    background: #2F3B53;
+}
+div.foot form select{
+    margin-left:10px;padding:3px 15px;
+}
+div.foot form label{
+    color:#aaa;margin-left:20px;
+}
+div.foot form input{
+    padding:3px;margin-right: 2px;width:60px;
+}
+div.foot button.close{
+    margin-left:30px;
+}
+div.foot ul li{
+    width:25px;margin:0 2px;color:#CF4429;padding:5px;
+    border: 1px solid #CCCCCC;background:#fff;text-align: center;
+}
+div.foot ul li.on{
+    background:#e6e6e6;color:#808080;
+}
+div.foot ul li:last-child{
+    width:50px;
+}
+div.foot div.fr span{
+    margin:5px 5px 0 0;
+}
+
+/*详细内容*/
+div.kind{
+    padding:10px 0 10px 8%;border-bottom: 1px solid #ccc;
+}
+div.kind span.block{
+    text-align: right;margin-right: 15px;
+    margin-top: 200px;
+}
+div.kind form{
+    width:80%;
+}
+.ke-container{
+    width:100%!important;
+}
+
+/*共同*/
+tbody tr.bg{
+    background:#FFFFE1;
+}
+tbody tr:hover{
+    background:#FFFFE1;cursor: pointer;
+}
+td.bg{
+    cursor: pointer;
+    background:url(../images/gou_no.png) no-repeat;
+    background-size: 30px;background-position: center;
+}
+td.yes{
+    background:url(../images/gou_yes.png) no-repeat;
+    background-size: 30px;background-position: center;
+}

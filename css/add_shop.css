@@ -1,0 +1,107 @@
+
+.add_shop{
+    background:#CCE8CC;
+}
+p.add_shop_head{
+    text-align: left;padding:10px;border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 10px;
+}
+p.add_shop_head a{
+    padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+}
+p.set{
+    text-align: left;padding:0 0 12px 20px;
+    border-bottom:1px solid #D3D3D3;
+}
+p.set a{
+    color:#000;background:#EAEEF4;font-size: 13px;padding:3px 8px;margin-left:10px;
+}
+p.set a.on{
+    background:#FFFFFF;font-weight: 600;
+}
+#base,#soe{
+    display:none;text-align:left;
+}
+/*base*/
+div.same,div.base li{
+    padding:10px 0 10px 8%;border-bottom: 1px solid #D3D3D3;
+}
+div.base li{
+    padding-left: 7%;
+}
+div.base b{
+    color:#f3f3f3;background:#2FA7F8;width:15px;height:15px;
+    display:inline-block;text-align: center;border-radius: 50%;
+}
+.over_:after{
+    content:'';display:block;clear:both;
+}
+div.over_ div{
+    width:33.3%;
+}
+ul.over_ li{
+    width:50%;
+}
+ol.over_ li{
+    width:25%;padding-left: 5%;
+}
+div.btn{
+    padding:10px 0;
+}
+div.btn a{
+    font-size: 14px;color:#f3f3f3;background:#66CDAA;
+    padding:5px 35px;margin-left:8%;
+}
+div.about_shop input{
+    width:24%;padding:3px 5px;margin-left: 15px;
+}
+div.about_shop span:last-child,div.ms_time span:last-child{
+    margin-left:25px;
+}
+div.ms_time input{
+    width:25%;margin-left: 15px;
+}
+div.about_shop form{
+    width:100%;
+}
+div.about_shop form label{
+    text-align: right;margin-right: 15px;
+}
+div.about_shop form textarea{
+    width:80%;
+}
+div.over_ div select{
+    margin-left: 15px;
+}
+ul.over_ li span.block,ol.over_ li span.block{
+    width:15%;text-align: right;margin-right: 15px;
+}
+ol.over_ li span.block{
+    width:45%;
+}
+ol.over_ li input{
+    width:40%;
+}
+div.kind span.block{
+    text-align: right;margin-right: 15px;
+    margin-top: 200px;
+}
+div.kind form{
+    width:80%;
+}
+.ke-container{
+    width:100%!important;
+}
+/*soe*/
+div.en{
+    padding:10px 0;border-bottom:1px solid #D3D3D3;
+}
+div.en span{
+    width:12%;text-align: right;margin-right: 15px;
+}
+div.en input{
+    width:20%;padding:5px;
+}
+div.en textarea{
+    width:30%;padding:5px;
+}

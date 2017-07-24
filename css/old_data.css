@@ -1,0 +1,31 @@
+/*过期数据*/
+.old_data{
+    text-align: left;padding:10px;color:#999;
+}
+.old_data p{
+    padding:10px 0;border-bottom: 1px solid #EEEEEE;
+}
+.old_data p.title{
+    font-size: 14px;color:#333;
+}
+.old_data p span{
+    color:#FF0000;
+}
+.old_data p button{
+    border:0;color:#f3f3f3;font-size: 14px;font-weight: 600;
+    width:100px;padding:8px;
+    background-image:linear-gradient(to bottom,#FEA63F 0%,#FEA13B 20%,#FF8B2D 80%,#FF8629 100%);
+}
+.old_data b{
+    width:120px;text-align: right;font-weight:500;
+    display: inline-block;
+}
+.old_data p.sure,.old_data p.time{
+    padding-top:25px;
+}
+div.condition p.keyWorld input{
+    padding:5px;width:200px;
+}
+div.condition p.price input{
+    width:60px;padding:3px;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--过期商品</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/old_shop.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+</head>
+<body>
+    <div id="old_shop"  class="old_shop">
+        <p class="_head">
+            <a href="#out" class="block">过期下架</a>
+        </p>
+        <!-- 商品过期 -->
+        <div class="manage" id='out'>
+            <div class="old_shop_head over">
+                    <div class="fl faBu_time">
+                        <label>发布时间：</label>
+                        <input type="date" id="time_"/>
+                        <span class="block">-</span>
+                        <input type="date" id="time"/>
+                    </div>
+                <div class="price fl over">
+                    <div class="fl quJ">
+                        <label>价格区间：</label>
+                        <input type="number"/>
+                        <span class="block">-</span>
+                        <input type="number"/>
+                    </div>
+                    <div class="fl name">
+                        <label>掌柜：</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl keyWord">
+                        <label>关键字：</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl ID">
+                        <label>商品ID：</label>
+                        <input type="text"/>
+                        <button>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th class="small">
+                            <input type="checkbox" class='checkAll'/>
+                        </th>
+                        <th class="small">ID</th>
+                        <th class="small_m">缩略图</th>
+                        <th class="big">商品名称</th>
+                        <th class="middle">掌柜</th>
+                        <th class="middle">价格(元)</th>
+                        <th class="middle">报名价(元)</th>
+                        <th class="middle">结束时间</th>
+                        <th class="middle">管理操作</th>
+                    </tr>
+                </thead>
+                <tbody id='tbody'>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="del" value="1" />
+                        </td>
+                        <td>12</td>
+                        <td>
+                            <img src="../images/admin.png"/>
+                        </td>
+                        <td class="name">
+                            <span>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                            <input type="text" style="display:none;width:300px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>eyeok28</td>
+                        <td class="price">199.00</td>
+                        <td class="price">29.90</td>
+                        <td>12小时前</td>
+                        <td class="operate">
+                            <a href="#out_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="del" value="2" />
+                        </td>
+                        <td>45</td>
+                        <td>
+                            <img src="../images/admin.png"/>
+                        </td>
+                        <td class="name">
+                            <span>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                            <input type="text" style="display:none;width:300px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>eyeok28</td>
+                        <td class="price">199.00</td>
+                        <td class="price">29.90</td>
+                        <td>12小时前</td>
+                        <td class="operate">
+                            <a href="#out_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="del" value="3" />
+                        </td>
+                        <td>99</td>
+                        <td>
+                            <img src="../images/admin.png"/>
+                        </td>
+                        <td class="name">
+                            <span>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                            <input type="text" style="display:none;width:300px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>eyeok28</td>
+                        <td class="price">199.00</td>
+                        <td class="price">29.90</td>
+                        <td>12小时前</td>
+                        <td class="operate">
+                            <a href="#out_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="del" value="4" />
+                        </td>
+                        <td>89</td>
+                        <td>
+                            <img src="../images/admin.png"/>
+                        </td>
+                        <td class="name">
+                            <span>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                            <input type="text" style="display:none;width:300px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>eyeok28</td>
+                        <td class="price">199.00</td>
+                        <td class="price">29.90</td>
+                        <td>12小时前</td>
+                        <td class="operate">
+                            <a href="#out_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="foot over">
+                <span class="block fl">
+                    <input type="checkbox" class='checkAll'/>全选/取消
+                </span>
+                <form class="block fl">
+                    <select class="delay">
+                        <option value="-1">一键延时</option>
+                        <option value="0">延时24小时</option>
+                        <option value="1">延时48小时</option>
+                        <option value="2">延时72小时</option>
+                    </select>
+                    <button class="delay_btn bg">延时提交</button>
+                </form>
+                <form class="block fl">
+                    <label>自主延时时间：</label>
+                    <input type="text" value="48"/>小时
+                    <button class="btn bg">自主延时提交</button>
+                </form>
+                <button class="fl closeAll" id='selectBtn' disabled="disabled">删除</button>
+                <button class="fl" id="againBtn">再次激活</button>
+                <div class="fr over">
+                    <span class="block fl">90条记录</span>
+                    <span class="block fl">1/5页</span>
+                    <ul class="over">
+                        <li class="fl on">1</li>
+                        <li class="fl">2</li>
+                        <li class="fl">3</li>
+                        <li class="fl">4</li>
+                        <li class="fl">5</li>
+                        <li class="fl">下一布</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 编辑 -->
+        <div id="out_edit" class="out_edit" style="display:none;">
+            <div class="out_shop name">
+                <span class="block">商品名称：</span>
+                <input type="text"/>
+            </div>
+            <ul class=" over">
+                <li class="fl">
+                    <span class="block">掌柜旺旺：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">商品ID：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">商品价格：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">报名价格：</span>
+                    <input type="text"/>
+                </li>
+            </ul>
+            <div class="out_shop url">
+                <span class="block">图片URL：</span>
+                <input type="text"/>
+            </div>
+            <div class="out_shop time">
+                <span class="block">开始时间：</span>
+                <input type="date"/>
+            </div>
+            <div class="out_shop time" >
+                <span class="block">结束时间：</span>
+                <input type="date"/>
+            </div>
+            <div class="out_shop">
+                <span class='block'>商品介绍：</span>
+                <textarea name="" cols="30" rows="5" class=""></textarea>
+            </div>
+            <div class="kind over">
+                <span class="block fl">详细内容：</span>
+                <form class="fl">
+                    <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+                </form>
+            </div>
+            <div class="out_shop">
+                <a href="javascript:;" class="block">确定</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/share.js"></script>
+    <script src='../js/table.js'></script>
+    <script>
+        $(function edit(){//编辑
+            $("a.edit_btn").click(function(event){
+                event.preventDefault();
+                var me=$(this);
+                var id=me.attr('href');console.log(id);
+                var val=me.html();
+                var a="<a href='"+id+"' class='block bg'>"+val+"</a>";
+                var div=me.parents('.manage');
+                div.hide().siblings('.out_edit').show();
+                var p=$(this).parents('.manage').siblings('._head');
+                var pre_a=p.find('a:first-child');
+                $(a).insertAfter(pre_a).siblings().removeClass('bg');
+                p.on('click','a',function(event){
+                    event.preventDefault();
+                    $(this).addClass('bg').siblings().removeClass('bg');
+                    var id_1=$(this).attr('href');
+                    console.log(id_1);
+                    $(id_1).show().siblings('div').hide();
+                })
+            })
+        });
+    </script>
+</body>
+</html>

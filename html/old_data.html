@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--历史数据</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/old_data.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+</head>
+<body>
+    <div id="old_data" class="old_data">
+        <div class="every">
+            <p class="title">清空所有宝贝（<span>新</span>）</p>
+            <p class="sure">
+                <b>确认删除：</b>
+                <input type="checkbox"/>
+                <span class="block">（注：确认是否要删除，删除的数据不可恢复！）</span>
+            </p>
+            <p class="btn">
+                <b>清空所有宝贝：</b>
+                <button>清空</button>
+            </p>
+        </div>
+        <div class="out">
+            <p class="title">清空已过期宝贝</p>
+            <p class="sure">
+                <b>确认删除：</b>
+                <input type="checkbox"/>
+                <span class="block">（注：确认是否要删除，删除的数据不可恢复！）</span>
+            </p>
+            <p class="btn">
+                <b>清空已过期宝贝：</b>
+                <button>清空</button>
+            </p>
+        </div>
+        <div class="shenH">
+            <p class="title">清空未审核宝贝</p>
+            <p class="sure">
+                <b>确认删除：</b>
+                <input type="checkbox"/>
+                <span class="block">（注：确认是否要删除，删除的数据不可恢复！）</span>
+            </p>
+            <p class="btn">
+                <b>清空未审核期宝贝：</b>
+                <button>清空</button>
+            </p>
+        </div>
+        <div class="close">
+            <p class="title">条件删除</p>
+            <div class="condition">
+                <p class="time">
+                    <b>活动结束时间：</b>
+                    <input type="date"/>-<input type="date"/>
+                </p>
+                <p class="type">
+                    <b>商品分类：</b>
+                    <select name="">
+                        <option value="-1">--请选择--</option>
+                        <option value="-2">--男装--</option>
+                        <option value="-3">--女装--</option>
+                        <option value="-4">--母婴--</option>
+                    </select>
+                </p>
+                <p class="shenhe">
+                    <b>审核状态：</b>
+                    <select name="">
+                        <option value="-1">--所有状态--</option>
+                        <option value="0">--已审核--</option>
+                        <option value="1">--未审核--</option>
+                    </select>
+                </p>
+                <p class="keyWorld">
+                    <b>关键字：</b>
+                    <input type="text"/>
+                </p>
+                <p class="price">
+                    <b>活动价格范围：</b>
+                    <input type="text"/>--<input type="text"/>元
+                </p>
+                <p class="sure_">
+                    <b>确认删除：</b>
+                    <input type="checkbox"/>
+                    <span class="block">（注：确认是否要删除，删除的数据不可恢复！）</span>
+                </p>
+                <p class="close">
+                    <button>删除</button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+</body>
+</html>

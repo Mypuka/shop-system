@@ -1,0 +1,106 @@
+/*过期下架详情*/
+.old_shop thead .small{
+    width:4%;
+}
+.old_shop thead .small_m{
+    width:6%;
+}
+.old_shop thead .middle{
+    width:10%;
+}
+td.operate{
+    text-align: center;
+}
+.old_shop td img,.shop_list_body td img{
+    width:35px;
+}
+.old_shop td.name{
+    text-align: left;
+}
+.old_shop td.name input{
+    width:100%;
+}
+.old_shop td.price{
+     color:#fe0000;
+ }
+td.operate a{
+    border-right: 1px solid #aaa;padding:0 5px;
+}
+td.operate a:last-child{
+    border-right: 0;
+}
+
+/*编辑*/
+.out_shop,.out_edit li{
+    text-align: left;padding:10px 0;border-bottom: 1px solid #ccc;
+}
+.out_edit li{
+    width:50%;
+}
+.out_edit input{
+    padding:3px;
+}
+.out_shop span,.out_edit li span{
+    width:13%;text-align: right;margin-right: 15px;
+}
+.out_edit li span{
+    width:26%;
+}
+.out_edit .name input,.out_edit .url input{
+    width:40%;
+}
+.out_edit{
+    display:block;background:#CCE8CC;
+}
+.out_shop textarea{
+    width:74%;padding:5px;
+}
+.out_shop a{
+    color:#f3f3f3;padding:5px 30px;background:#66CDAA;
+    margin-left:7%;font-size: 14px;
+}
+.out_edit .time input{
+    width:20%;
+}
+/*搜索框*/
+.old_shop_head{
+    background:#FFFCED;padding:10px;margin-bottom: 10px;
+    border:1px solid #FFBE7A;text-align: left;
+}
+.old_shop_head div.shop_type{
+    margin-left:15px;
+}
+.old_shop_head div.faBu_time input{
+    width:130px;
+}
+.old_shop_head div.shop_type select{
+    padding:2px 5px;
+}
+.old_shop_head div.price{
+    /*margin-left:10px;*/
+}
+.old_shop_head div.price input[type="number"]{
+    width:70px;
+}
+.old_shop_head div.price div{
+    margin-left: 15px;
+}
+.old_shop_head div.price input{
+    padding:3px 5px;
+}
+.old_shop_head div.price div.rate input{
+    width:70px;
+}
+.old_shop_head div.price div.name input{
+    width:120px;
+}
+.old_shop_head div.price div.keyWord input{
+    width:100px;
+}
+.old_shop_head div.price div.ID input{
+    width:65px;
+}
+.old_shop_head div.price div.ID button{
+    color:#f3f3f3;background:#2F3B53;border:0;padding:4px 10px;
+    margin:-1px 0 0 -4px;border-radius: 3px;
+}

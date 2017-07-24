@@ -1,0 +1,81 @@
+
+.container{
+    background:#CCE8CC;text-align: left;
+}
+p._head{
+    text-align: left;padding:10px;border-bottom: 1px solid #D3D3D3;
+    /*background:#fff;*/
+}
+p._head a{
+    padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+}
+p._head a.fr{
+    color:#232323;
+}
+b{
+    color:#f3f3f3;background:#2FA7F8;width:15px;height:15px;
+    display:inline-block;text-align: center;border-radius: 50%;
+}
+/*ÄÚÈÝÕ¹ÏÖ*/
+div.manage{
+    background:#fff;
+}
+.ad_head{
+    background: #FFFCED;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FFBE7A;
+    text-align: left;
+}
+.ad_head input{
+    padding: 3px 5px;
+}
+.ad_head button{
+    color: #f3f3f3;
+    background: #2F3B53;
+    border: 0;
+    padding: 5px 10px;
+    margin: -1px 0 0 -4px;
+    border-radius: 3px;
+}
+/*manage*/
+table{
+    text-align: center;
+}
+/*edit*/
+div._edit{
+    display:none;
+}
+div.same{
+    padding:10px 0 10px 8%;border-bottom: 1px solid #D3D3D3;
+}
+div.about_shop input{
+    width:24%;padding:3px 5px;margin-left: 15px;
+}
+div.about_shop span:last-child{
+    margin-left:25px;
+}
+div.about_shop form label{
+    text-align: right;margin-right: 15px;
+}
+div.about_shop form textarea{
+    width:80%;padding:3px 5px;
+}
+div.kind span.block{
+    text-align: right;margin-right: 15px;
+    margin-top: 200px;
+}
+div.kind form{
+    width:80%;
+}
+.ke-container{
+    width:100%!important;
+}
+div.btn{
+    padding:10px 0;
+}
+div.btn a{
+    font-size: 14px;color:#f3f3f3;background:#66CDAA;
+    padding:5px 35px;margin-left:6%;
+}
+

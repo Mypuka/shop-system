@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--商品列表</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/shop_list.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+</head>
+<body>
+    <div id="shop_list" class="shop_list">
+        <p class="_head">
+            <a href="#list" class="block">商品列表</a>
+        </p>
+        <!-- 列表详情 -->
+        <div class="manage" id="list">
+            <div class="shop_list_head">
+                <div class="time over">
+                    <div class="fl faBu_time">
+                        <label>发布时间：</label>
+                        <input type="date" id="time_"/>
+                        <span class="block">-</span>
+                        <input type="date" id="time"/>
+                    </div>
+                    <div class="fl shop_type">
+                        <label>分类：</label>
+                        <select name="shop" id="">
+                            <option value="所有">--所有--</option>
+                            <option value="上衣">--上衣--</option>
+                            <option value="裤子">--裤子--</option>
+                            <option value="母婴">--母婴--</option>
+                            <option value="家居">--家居--</option>
+                            <option value="女装">--女装--</option>
+                            <option value="文体户外">--文体户外--</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="price over">
+                    <div class="fl quJ">
+                        <label>价格区间：</label>
+                        <input type="number"/>
+                        <span class="block">-</span>
+                        <input type="number"/>
+                    </div>
+                    <div class="fl rate">
+                        <label>佣金比率：</label>
+                        <input type="text"/>
+                        <span class="block">-</span>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl name">
+                        <label>掌柜：</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl keyWord">
+                        <label>关键字：</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl ID">
+                        <label>商品ID：</label>
+                        <input type="text"/>
+                        <button>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop_list_body">
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th class="small">
+                                <input type="checkbox" name="shop_list" class="checkAll" />
+                            </th>
+                            <th class="small">ID</th>
+                            <th>缩略图</th>
+                            <th>商品名称</th>
+                            <th>分类</th>
+                            <th>掌柜</th>
+                            <th>原价</th>
+                            <th>折价</th>
+                            <th>折率</th>
+                            <th>佣金</th>
+                            <th class="small">佣率</th>
+                            <th>30付</th>
+                            <th>销量</th>
+                            <th>促销</th>
+                            <th class="small">店铺</th>
+                            <th>点击</th>
+                            <th>排序</th>
+                            <th class="small">状态</th>
+                            <th>发布时间</th>
+                            <th>管理操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbody'>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="1" />
+                            </td>
+                            <td>89</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="2" />
+                            </td>
+                            <td>719</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="3" />
+                            </td>
+                            <td>7</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="4" />
+                            </td>
+                            <td>712</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="5" />
+                            </td>
+                            <td>452</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="6" />
+                            </td>
+                            <td>725</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="7" />
+                            </td>
+                            <td>782</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="8" />
+                            </td>
+                            <td>19</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list"/>
+                            </td>
+                            <td>789</td>
+                            <td>
+                                <img src="../images/admin.png"/>
+                            </td>
+                            <td class="intro">
+                                <span class="" style=''>秋冬款男士加绒牛仔裤男小脚弹力修身型冬季青少年显瘦长黑色裤子</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>男装</td>
+                            <td class="name">零点衬衫</td>
+                            <td class="number">138.00</td>
+                            <td class="number">49.00</td>
+                            <td class="number">3600</td>
+                            <td class="number">14.70</td>
+                            <td class="number">30</td>
+                            <td></td>
+                            <td class="number">1867</td>
+                            <td></td>
+                            <td class="number">淘宝</td>
+                            <td class="number">0</td>
+                            <td>
+                                <span class="block">9999</span>
+                                <input type="text" style="display:none;width:50px;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td class="bg yes"></td>
+                            <td>2分钟前</td>
+                            <td class="operate over">
+                                <a href="#list_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 底部 -->
+            <div class="foot over">
+                <span class="block fl">
+                    <input type="checkbox" name="shop_list" class="checkAll"/>全选/取消
+                </span>
+                <!--<button class="btn fl bg">状态</button>-->
+                <button class="btn_move fl" disabled="disabled">移动</button>
+                <button class="fl" id='selectBtn' disabled="disabled">删除</button>
+                <div class="fr over">
+                    <span class="block fl">90条记录</span>
+                    <span class="block fl">1/5页</span>
+                    <ul class="over">
+                        <li class="fl on">1</li>
+                        <li class="fl">2</li>
+                        <li class="fl">3</li>
+                        <li class="fl">4</li>
+                        <li class="fl">5</li>
+                        <li class="fl">下一布</li>
+                    </ul>
+                </div>
+            </div>
+             <!-- 移动弹框-->
+            <div id="_move">
+                <div class="move">
+                    <p class="title over">
+                        <span class="block fl">分类移动</span>
+                        <img src="../images/off.png" class="fr no"/>
+                    </p>
+                    <div class="form">
+                        <span class="block">分类移动到：</span>
+                        <select>
+                            <option value="-1">--请选择--</option>
+                            <option value="0">--女装--</option>
+                            <option value="1">--男装--</option>
+                            <option value="2">--家电--</option>
+                            <option value="3">--美食--</option>
+                            <option value="4">--户外--</option>
+                        </select>
+                    </div>
+                    <div class="sure">
+                        <a href="javascript:;" class="block">确定</a>
+                        <a href="javascript:;" class="no block">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 编辑 -->
+        <div id="list_edit" class="list_edit">
+            <div class="_edit">
+                <span class="block">商品名称：</span>
+                <input type="text"/>
+            </div>                    
+            <ul class="over">
+                <li class="fl">
+                    <span class="block">掌柜旺旺：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">IID：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">商品原价：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">商品折价：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">销量：</span>
+                    <input type="text"/>
+                </li>
+                <li class="fl">
+                    <span class="block">排序：</span>
+                    <input type="text"/>
+                </li>
+            </ul>
+            <ol class="over">
+                <li class="fl">
+                    <span class="block">所属分类：</span>
+                    <select>
+                        <option value="-1">--请选择--</option>
+                        <option value="0">--男装--</option>
+                        <option value="1">--女装--</option>
+                        <option value="2">--家电--</option>
+                        <option value="3">--美食--</option>
+                        <option value="4">--户外--</option>
+                    </select>
+                </li>
+                <li class="fl">
+                    <span class="block">商品店铺：</span>
+                    <select>
+                        <option value="0">--天猫--</option>
+                        <option value="1">--淘宝--</option>
+                    </select>
+                </li>
+                <li class="fl">
+                    <span class="block">是否包邮：</span>
+                    <select>
+                        <option value="0">--包邮--</option>
+                        <option value="1">--不包邮--</option>
+                    </select>
+                </li>
+                <li class="fl">
+                    <span class="block">是否促销：</span>
+                    <select>
+                         <option value="0">--是--</option>
+                        <option value="1">--否--</option>
+                    </select>
+                </li>
+            </ol>
+            <div class="_edit">
+                <span class="block">商品图片URL：</span>
+                <input type="text"/>
+            </div>
+            <div class="_edit time">
+                <span class="block">开始时间：</span>
+                <input type="date"/>
+            </div>
+            <div class="_edit time" >
+                <span class="block">结束时间：</span>
+                <input type="date"/>
+            </div>
+            <div class="_edit">
+                <span class='block'>商品介绍：</span>
+                <textarea name="" cols="30" rows="5" class=""></textarea>
+             </div>
+            <div class="kind over">
+                <span class="block fl">详细内容：</span>
+                <form class="fl">
+                    <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+                </form>
+            </div>
+            <div class="_edit">
+                <a href="javascript:;" class="block">确定</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src='../js/table.js'></script>
+    <script src="../js/share.js"></script>
+    <script>
+        $(function edit(){//编辑
+            $("a.edit_btn").click(function(event){
+                event.preventDefault();
+                var me=$(this);
+                var id=me.attr('href');console.log(id);
+                var val=me.html();
+                var a="<a href='"+id+"' class='block bg'>"+val+"</a>";
+                var div=me.parents('.manage');
+                div.hide().siblings('div').show();
+                var p=$(this).parents('.manage').siblings('._head');
+                var pre_a=p.find('a:first-child');
+                $(a).insertAfter(pre_a).siblings().removeClass('bg');
+                p.on('click','a',function(event){
+                    event.preventDefault();
+                    $(this).addClass('bg').siblings().removeClass('bg');
+                    var id_1=$(this).attr('href');
+                    console.log(id_1);
+                    $(id_1).show().siblings('div').hide();
+                })
+            })
+        });
+        /***************************/
+        $(function show(){//移动弹框显示
+            $('.move_btn').click(function(){
+                $('#_move').show();
+            });
+            $('#_move .no').click(function(){
+                $(this).parents('#_move').hide();
+            })
+        })
+    </script>
+</body>
+</html>

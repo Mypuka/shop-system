@@ -1,0 +1,200 @@
+
+.shop_type_head{
+    background:#FFFCED;padding:10px;margin-bottom: 10px;
+    border:1px solid #FFBE7A;text-align: left;
+}
+.shop_type_head button{
+    color: #f3f3f3;
+    background: #2F3B53;
+    border: 0;
+    padding:4px 10px;
+    margin: -1px 0 0 -4px;
+    border-radius: 3px;
+}
+.shop_type_head div.shop_type{
+    margin:0 15px;
+}
+.shop_type_head div.shop_type select{
+    padding:2px 5px;
+}
+.shop_type_head input{
+    padding:3px 5px;width:110px;
+}
+.shop_type_head div.keyWord{
+    margin-right: 15px;
+}
+/*商品分类*/
+/*管理*/
+.add_type .small_1{
+    width:4%;
+}
+.add_type .small{
+    width:5%;
+}
+.add_type .small_2{
+    width:6%;
+}
+.add_type .big{
+    text-align: left;padding-left: 8px;
+}
+.add_type .big input{
+    width:60px;padding:3px;
+}
+.add_type .middle{
+    width:15%;
+}
+.add_type .middle a{
+    border-right: 1px solid #aaa;padding:0 5px;
+}
+.add_type .middle a:last-child{
+    border:0;
+}
+
+
+/*商品分类编辑*/
+.type_edit{
+    display:none;background:#CCE8CC;
+}
+.edit{
+    text-align: left;padding:10px 0;
+}
+.edit span{
+    width:13%;text-align: right;margin-right: 15px;
+}
+.edit span b{
+    color:red;
+}
+.edit input{
+    padding:5px;width:30%;
+}
+.edit select{
+    padding:3px 5px;
+}
+.edit a{
+    color:#f3f3f3;background:#0091EA;padding:5px 15px; border-radius: 5px;
+    font-size:14px;
+}
+.btn_edit a:first-child{
+    margin:0 15px 0 9%;
+}
+
+/*移动弹框*/
+#mask_move,#mask_type{
+    width:100%;z-index:10999;
+    display:none;top:0;left:0;height:700px;
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    padding-bottom: 3px;
+}
+._move,.son_type{
+    width:25%;top:30%;left:35%;border:1px solid #363B3F;
+    background:#F2F2F3;position:absolute;
+}
+._move p.title,.son_type p.title{
+    background:#F2F2F3;padding:5px 10px;font-size:16px;color:#4C5A5F;font-weight: 600;
+    border-bottom: 1px solid #aaa;
+}
+._move p.title img,.son_type p.title img{
+    width:20px;
+}
+._move .form{
+    padding:10px;border-bottom: 1px solid #aaa;
+}
+._move .sure{
+    padding:10px ;
+}
+._move .sure a{
+    padding:3px 8px;border-radius: 3px;font-size: 14px;
+}
+._move .sure a:first-child{
+    background:#2BA3DE;color:#f3f3f3;margin-right: 8px;
+}
+._move .sure a:nth-child(2){
+    border:1px solid #212122;
+}
+/*添加子分类的弹框*/
+.son_type{
+    width:60%;left:20%;
+}
+.son_type p.set{
+    text-align: left;
+    padding: 10px 0 12px 20px;
+    background:#ffffff;
+    border-bottom: 1px solid #D3D3D3;
+}
+#base,#soe{
+    background:#ffffff;display:none;
+    text-align: left;padding:0 15px 10px;
+}
+.son_type p.set a{
+    color: #000;border-radius: 5px;
+    background: #EAEEF4;
+    font-size: 13px;
+    padding: 3px 8px;
+    margin-left: 10px;
+}
+.son_type p.set a.on{
+    background: #71B7E6;color:#f3f3f3;
+    font-weight: 600;
+}
+.base p,.soe p{
+    padding:12px;border-bottom: 1px solid #D3D3D3;
+}
+.base p span.block,.soe p span.block{
+    margin:0 15px 0 40px;width:12%;text-align: right;
+}
+.base p input,.soe p input{
+    padding:3px 5px;
+}
+.soe p input,.soe p textarea{
+    width:60%;padding:3px 5px;
+}
+.base p b{
+    color: #f3f3f3;
+    background: #2FA7F8;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+p.foot{
+    border-bottom: none;padding:10px;
+    border-top: 2px solid #DCE3ED;
+}
+p.foot button{
+    padding:5px 10px;border-radius: 4px;
+    border:0;
+}
+p.foot button.sure{
+    background: #2FA7F8;color:#f3f3f3;border:0;
+    margin-right: 15px;
+}
+/*添加子分类*/
+.add_type tr.for-top{
+    /*display:none;*/
+}
+.add_type tr.for-top td.big{
+    position:relative;
+    padding-left:66px;
+}
+.add_type tr.for-top b{
+    width:12px;
+    height:20px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    top: -4px;
+    left:45px;
+}
+.add_type td{
+    padding:6px 0;
+}
+.add_type td s{
+    width:16px;background-image: url(../images/slide_add.png);height:16px;
+    background-size: 15px;background-repeat: no-repeat;
+    display:inline-block;background-position: 1px 1px;margin-right: 5px;
+}
+.add_type td s.open{
+    background-image: url(../images/slide_remov.jpg);background-size: 15px;
+}

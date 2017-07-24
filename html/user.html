@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--用户管理</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/share.css"/>
+    <link rel="stylesheet" href="../css/marketing.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+    <style>
+        iframe{
+            width:100%;height:700px;
+        }
+    </style>
+</head>
+<body>
+    <div id="_body">
+        <!-- head-->
+        <div id="head">
+            <div class="over head">
+                <div class="fl logo over">
+                    <a href="index.html" class="block fl">
+                        <img src="../images/PC-logo.png"/>
+                    </a>
+                    <div class="fl">后台管理中心</div>
+                </div>
+                <ul class="fr user over">
+                    <li class="fr user over">
+                        <img src="../images/admin.png" class="fl"/>
+                        <span class="block fl">你好，<span class="name">Tony</span>！</span>
+                    </li>
+                    <li class="fr exit">
+                        <a href="" class="block">安全退出</a>
+                    </li>
+                    <li class="fr manage">
+                        <a href="" class="block">后台管理</a>
+                    </li>
+                    <li class="fr guide">
+                        <a href="" class="block">操作指南</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav-->
+        <div id="nav">
+            <ol class="nav over">
+                <li class="fl">
+                    <a href="index.html" class="block">
+                        <i class="icon_font">&#xe60b;</i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="shop_index.html" class="block">商品数据管理</a>
+                </li>
+                <li class="fl">
+                    <a href="marketing.html" class="block">营销中心</a>
+                </li>
+                <li class="fl on">
+                    <a href="user.html" class="block">用户管理</a>
+                </li>
+            </ol>
+        </div>
+        <!-- section-->
+        <div id="content_box">
+            <div class="section over">
+                <div class="aside fl">
+                    <h1>菜单管理</h1>
+                    <h3 class="useful on">代理商管理</h3>
+                    <ul class="sub_menu">
+                        <li>
+                            <a href="user_msg_in.html" title="user_msg_in" class="block click">(代理商)信息导入</a>
+                        </li>
+                        <li>
+                            <a href="tong_bu.html" title="tong_bu" class="block click">同步淘客后台广告位</a>
+                        </li>
+                    </ul>
+                    <h3 class="useful on">会员管理</h3>
+                    <ul class="sub_menu">
+                        <li class="">
+                            <a href="viper_msg_in.html" title="viper_msg_in" class="block click">公众号导入会员信息</a>
+                        </li>
+                        <li>
+                            <a href="tong_bu_viper.html" title="tong_bu_viper" class="block click">同步公众号会员信息</a>
+                        </li>
+                        <li>
+                            <a href="" class="block click">会员积分管理</a>
+                            <dl>
+                                <dd>
+                                    <span class="block"></span>
+                                    <a href="" class="block click_son">会员积分计算</a>
+                                </dd>
+                                <dd>
+                                    <span class="block"></span>
+                                    <a href="" class="block click_son">会员积分兑换</a>
+                                </dd>
+                                <dd>
+                                    <span class="block"></span>
+                                    <a href="" class="block click_son">会员签到</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="viper_msg_show.html" title="viper_msg_show" class="block click">会员信息展现</a>
+                        </li>
+                    </ul>
+                    <!--
+                    <h3 class="useful on">积分商城订单管理</h3>
+                    <ul class="sub_menu">
+                        <li class="">
+                            <a href="" class="block click">订单积分</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="block click">全部订单</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="block click">待发货</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="block click">待收货</a>
+                        </li>
+                    </ul>
+                     -->
+                    <h3 class="useful on">用户反馈</h3>
+                </div>
+                <div class="all fl">
+                    <div class="title over">
+                        <p class="head fl">
+                            <i class="address" style="margin-right:5px">&#xe60e;</i>
+                            当前所在位置：
+                            <a href="" class="index block">后台首页</a>
+                        </p>
+                        <p class="map fr" style="cursor:pointer;">后台地图</p>
+                    </div>
+                    <div class="contentAll">
+                        <iframe src='welcome.html' id='i' frameborder='0'></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--map-->
+        <div id="mask">
+            <div class="map">
+                <p class="title over">
+                    <span class="block fl">后台地图</span>
+                    <img src="../images/off.png" class="fr"/>
+                </p>
+                <div class="type">
+                    <!-- 商品数据管理-->
+                    <div class="type_ over">
+                        <div class="fl title_fl">商品数据管理</div>
+                        <ul class="fl">
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">商品发布</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">手动添加商品</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">精选优质商品(优惠券)</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">API商品数据调用</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">商品管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">商品列表</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">过期下架</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">即将开始</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">历史商品数据处理</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">商品分类</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">分类管理</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">代理商数据管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">商品链接及淘口令生成</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 营销中心-->
+                    <div class="type_ over">
+                        <div class="fl title_fl">营销中心</div>
+                        <ul class="fl">
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">频道管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">每日必抢</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">母婴精选</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">9块9</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">积分商城</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">广告位置管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">广告位内容管理</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">新增广告位</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">线报</dt>
+                                    <dd class="fl">
+                                        <!--<a href="" class="block">子分类</a>-->
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 用户管理-->
+                    <div class="type_ over">
+                        <div class="fl title_fl">用户管理</div>
+                        <ul class="fl">
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">代理商管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">（代理商）信息导入</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">同步淘客后台广告位</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">会员管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">公众号导入会员信息</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">同步公众号会员信息</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">会员积分管理</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">会员信息展现</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <!--
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">积分商城订单管理</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">订单积分</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">全部订单</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">待发货</a>
+                                    </dd>
+                                    <dd class="fl">
+                                        <a href="" class="block">待收货</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                             -->
+                            <li class="over">
+                                <dl>
+                                    <dt class="fl">用户反馈</dt>
+                                    <dd class="fl">
+                                        <a href="" class="block">订单积分</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/share.js"></script>
+    <script src="../js/left.js"></script>
+</body>
+</html>

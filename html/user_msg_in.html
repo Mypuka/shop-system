@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>代理商信息导入</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/user_msg.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+    <link rel="stylesheet" href="../css/foot.css"/>
+</head>
+<body>
+        <div class="container">
+            <p class="_head">
+                <a href="#manage" class="block">代理商信息导入</a>
+            </p>
+            <!-- msg_in-->
+            <div class="manage" id="manage">
+                <!-- 头部搜索-->
+                <ul class="msg_head over">
+                    <li class="fl">
+                        <label>佣率：</label>
+                        <input type="text"/>
+                        <span class="block">-</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <label>分润比例：</label>
+                        <input type="text"/>
+                        <span class="block">-</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <label>总佣金：</label>
+                        <input type="text"/>
+                        <span class="block">-</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl ad">
+                        <label>广告位ID：</label>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl ad">
+                        <label>关键字：</label>
+                        <input type="text"/>
+                        <button>搜索</button>
+                    </li>
+                    <li class="fr">
+                        <a href="javascript:;" class="block fr">一键导入</a>
+                    </li>
+                </ul>
+                <!-- 导入内容table-->
+                <div class="msg_body">
+                    <table border="0">
+                        <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="shop_list" class="checkAll" />
+                            </th>
+                            <th>ID</th>
+                            <th>姓名</th>
+                            <th>广告位ID</th>
+                            <th>微信号</th>
+                            <th>手机号</th>
+                            <th>职业</th>
+                            <th>分润比例</th>
+                            <th>总佣金</th>
+                            <th>佣率</th>
+                            <th>开始时间</th>
+                            <th>管理操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id='tbody'>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shop_list" value="1" />
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <span>niki</span>
+                                <input type="text" style="display:none;"/>
+                                <i class="revise">&#xe624;</i>
+                            </td>
+                            <td>65089256</td>
+                            <td>wei_xin123</td>
+                            <td>138******12</td>
+                            <td>兼职</td>
+                            <td>10%</td>
+                            <td>200</td>
+                            <td>20%</td>
+                            <td>2016-12-28</td>
+                            <td class="operate over">
+                                <a href="#user_edit" class="edit_btn block">编辑</a>
+                                <a href="javascript:;" class="btn_close block">删除</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 底部 -->
+                <div class="foot over">
+                    <span class="block fl">
+                        <input type="checkbox" name="shop_list" class="checkAll"/>全选/取消
+                    </span>
+                    <!--<button class="btn fl bg">状态</button>-->
+                    <!--<button class="move_btn fl bg">移动</button>-->
+                    <!--<button class="fl" id='selectBtn' disabled="disabled">删除</button>-->
+                    <div class="fr over">
+                        <span class="block fl">90条记录</span>
+                        <span class="block fl">1/5页</span>
+                        <ul class="over">
+                            <li class="fl on">1</li>
+                            <li class="fl">2</li>
+                            <li class="fl">3</li>
+                            <li class="fl">4</li>
+                            <li class="fl">5</li>
+                            <li class="fl">下一布</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- edit-->
+            <div id="user_edit" class="user_edit">
+                <ul class="over">
+                    <li class="fl">
+                        <span class="block">姓名：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">广告位ID：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">手机号：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">微信号：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">职业：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">分润比例：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">佣率：</span>
+                        <input type="text"/>
+                    </li>
+                </ul>
+                <div class="kind over">
+                    <span class="block fl">分润明细：</span>
+                    <form class="fl">
+                        <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+                    </form>
+                </div>
+                <div class="btn">
+                    <a href="" class="block">确定</a>
+                </div>
+            </div>
+        </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/share.js"></script>
+    <script src='../js/table.js'></script>
+    <script>
+        $(function(){//单行删除
+            $('.btn_close').click(function(event){
+                event.preventDefault();
+                if(confirm("确定要删除选中的行吗？")){
+                    $(this).parents('tr').remove();
+//                    $('#selectBtn').prop('disabled',true).removeClass('bg');
+                }
+            });
+        });
+        $(function edit(){//编辑
+            $("a.edit_btn").click(function(event){
+                event.preventDefault();
+                var me=$(this);
+                var id=me.attr('href');console.log(id);
+                var val=me.html();
+                var a="<a href='"+id+"' class='block bg'>"+val+"</a>";
+                var div=me.parents('.manage');
+                div.hide().siblings('div').show();
+                var p=$(this).parents('.manage').siblings('._head');
+                var pre_a=p.find('a:first-child');
+                $(a).insertAfter(pre_a).siblings().removeClass('bg');
+                p.on('click','a',function(event){
+                    event.preventDefault();
+                    $(this).addClass('bg').siblings().removeClass('bg');
+                    var id_1=$(this).attr('href');
+                    console.log(id_1);
+                    $(id_1).show().siblings('div').hide();
+                })
+            })
+        });
+    </script>
+</body>
+</html>

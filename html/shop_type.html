@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--分类管理</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/shop_type.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+    <style>
+        .manage{
+            padding-bottom:50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 添加分类-->
+    <div id="add_type" class="add_type" style="display:block;">
+        <p class="_head">
+            <a href="#manage" class="block">分类管理</a>
+        </p>
+        <!-- 管理-->
+        <div class="manage" id="manage">
+            <div class="shop_type_head">
+                <div class="time over">
+                    <div class="fl shop_type">
+                        <label>分类名称：</label>
+                        <select name="shop" id="">
+                            <option value="所有">--所有--</option>
+                            <option value="上衣">--上衣--</option>
+                            <option value="裤子">--裤子--</option>
+                            <option value="母婴">--母婴--</option>
+                            <option value="家居">--家居--</option>
+                            <option value="女装">--女装--</option>
+                            <option value="文体户外">--文体户外--</option>
+                        </select>
+                    </div>
+                    <div class="fl keyWord">
+                        <label>关键字：</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl ID">
+                        <label>商品ID：</label>
+                        <input type="text"/>
+                        <button>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th class="small_1">
+                            <input type="checkbox" name='shop_type' value="0" class="checkAll"/>
+                        </th>
+                        <th class="small">ID</th>
+                        <th class="big">分类名称</th>
+                        <th class="small">排序</th>
+                        <th class="small_2">首页显示</th>
+                        <th class="middle">管理操作</th>                    
+                    </tr>                    
+                </thead>                    
+                <tbody id='tbody'>
+                    <tr>
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td class="num">11</td>
+                        <td class="big over">
+                            <s class="fl"></s>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr id="for_top_20" class="for-top for_top_11 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr id="for_top_21" class="for-top for_top_11 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr id="for_top_22" class="for-top for_top_11 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr id="for_top_23" class="for-top for_top_11 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name='shop_type' value="2"/></td>
+                        <td class="num">13</td>
+                        <td class="big">
+                            <span class="block type_name">男装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name='shop_type' value="3"/></td>
+                        <td class="num">100</td>
+                        <td class="big">
+                            <s class="fl"></s>
+                            <span class="block type_name">家居</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_100 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_100 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_100 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_100 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name='shop_type' value="4"/></td>
+                        <td class="num">15</td>
+                        <td class="big">
+                            <s class="fl"></s>
+                            <span class="block type_name">数码家电</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_15 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_15 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_15 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="for-top for_top_15 hidden">
+                        <td><input type="checkbox" name='shop_type' value="1"/></td>
+                        <td>12</td>
+                        <td class="big over">
+                            <b></b>
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">1</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">文体户外</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">15</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">食品</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">1</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">1</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">1</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td class="num">1</td>
+                        <td class="big">
+                            <!--<i class="icon_add">&#xe608;</i>-->
+                            <span class="block type_name">女装</span>
+                            <input type="text" style="display: none"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td>
+                            <span class="block">255</span>
+                            <input type="text" style="display:none;width:50px;"/>
+                            <i class="revise">&#xe624;</i>
+                        </td>
+                        <td class="bg yes"></td>
+                        <td class="over middle">
+                            <a href="javascript:;" class="block add_son_type">添加子分类</a>
+                            <a href="#type_edit" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                </tbody>        
+            </table>
+            <!-- 移动弹框-->
+            <div id="mask_move">
+                <div class="_move">
+                    <p class="title over">
+                        <span class="block fl">分类移动</span>
+                        <img src="../images/off.png" class="fr no"/>
+                    </p>
+                    <div class="form">
+                        <span class="block">分类移动到：</span>
+                        <select>
+                            <option value="-1">--请选择--</option>
+                            <option value="0">--女装--</option>
+                            <option value="1">--男装--</option>
+                            <option value="2">--家电--</option>
+                            <option value="3">--美食--</option>
+                            <option value="4">--户外--</option>
+                        </select>
+                    </div>
+                    <div class="sure">
+                        <a href="javascript:;" class="block">确定</a>
+                        <a href="javascript:;" class="no block">取消</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="foot over">
+                <span class="block fl">
+                    <input type="checkbox" name="shop_type" value="0" class="checkAll"/>全选/取消
+                </span>
+                <button class="btn_move fl" disabled="disabled">移动</button>
+                <button class="fl" id='selectBtn' disabled="disabled">删除</button>
+            </div>
+            <!-- 添加子分类-->
+            <div id="mask_type">
+                <div class="son_type">
+                    <p class="title over">
+                        <span class="block fl">添加子分类</span>
+                        <img src="../images/off.png" class="fr no"/>
+                    </p>
+                    <p class="set">
+                        <a href="#base" class="block on">基本信息</a>
+                        <a href="#soe" class="block">SEO设置</a>
+                    </p>
+                    <div>
+                        <!-- 基本信息-->
+                        <div id="base" class="base" style="display:block">
+                            <p>
+                                <span class="block">上级分类：</span>
+                                <select>
+                                    <option value="-1">--请选择--</option>
+                                    <option value="0">女装</option>
+                                    <option value="1">男装</option>
+                                    <option value="2">数码家电</option>
+                                    <option value="3">文体户外</option>
+                                    <option value="4">家居</option>
+                                </select>
+                            </p>
+                            <p>
+                                <span class="block">分类名称：</span>
+                                <input type="text"/>
+                                <span> <b>!</b>请输入分类名称</span>
+                            </p>
+                            <p>
+                                <span class="block">首页显示：</span>
+                                <input type="radio" name="show" value="yes" checked/>显示
+                                <input type="radio" name="show" value="no"/>不显示
+                            </p>
+                            <p>
+                                <span class="block">店铺类型：</span>
+                                <select name="shop">
+                                    <option value="-1">所有</option>
+                                    <option value="0">天猫商城</option>
+                                    <option value="1">淘宝集市</option>
+                                </select>
+                            </p>
+                        </div>
+                        <!-- soe-->
+                        <div id="soe" class="soe">
+                            <p>
+                                <span class="block">Title:</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span class="block">Keywords:</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span class="block">Description</span>
+                                <textarea name="detail" cols="30" rows="5"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="foot over">
+                        <button class="fr">取消</button>
+                        <button class="fr sure">确定</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 编辑-->
+        <div id="type_edit" class="type_edit">
+            <div class="type_name edit">
+                <span class="block"> <b>*</b>分类名称：</span>
+                <input type="text" placeholder="不超过20个字符"/>
+            </div>
+            <div class="top_type edit">
+                <span class="block">上级分类：</span>
+                <select>
+                    <option value="-1">请选择上级分类</option>
+                    <option value="0">服装</option>
+                    <option value="1">家居</option>
+                    <option value="2">户外</option>
+                    <option value="3">家电</option>
+                    <option value="4">美食</option>
+                </select>
+            </div>
+            <div class="shop_edit edit">
+                <span class="block">商品类型：</span>
+                <select>
+                    <option value="-1">请选择商品类型</option>
+                    <option value="0">上衣</option>
+                    <option value=1>牛仔裤</option>
+                    <option value="2">内衣</option>
+                    <option value="3">休闲裤</option>
+                    <option value="4">连衣裙</option>
+                </select>
+            </div>
+            <div class="type_url edit">
+                <span class="block">URL重写名称：</span>
+                <input type="text"/>
+            </div>
+            <div class="type_search edit">
+                <span class="block">搜索标题：</span>
+                <input type="text" placeholder="不超过100个字符"/>
+            </div>
+            <div class="type_search_Keyword edit">
+                <span class="block">搜索关键字：</span>
+                <input type="text" placeholder="不超过160个字符"/>
+            </div>
+            <div class="kind over">
+                <span class="block fl">详细内容：</span>
+                <form class="fl">
+                    <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+                </form>
+            </div>
+            <div class="btn_edit edit">
+                <a href="javascript:;" class="block">确定</a>
+                <a href="javascript:;" class="block">保存并继续添加</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src='../js/table.js'></script>
+    <script src="../js/share.js"></script>
+    <script src="../js/_type.js"></script>
+</body>
+</html>

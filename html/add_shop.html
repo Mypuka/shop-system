@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--添加商品</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/share.css"/>
+    <link rel="stylesheet" href="../css/add_shop.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+</head>
+<body>
+    <div id="add_shop" class="add_shop" style="display:block;">
+        <p class="add_shop_head">
+            <a href="" class="block">添加商品</a>
+        </p>
+        <p class="set">
+            <a href="#base" class="block on">基本信息</a>
+            <a href="#soe" class="block">SEO设置</a>
+        </p>
+        <div>
+            <div id="base" class="base" style="display:block;" >
+                <div class="same about_shop">
+                    <span class="block">宝贝链接：</span>
+                    <input type="text"/>
+                    <button>一键采集</button>
+                    <span> <b>!</b>请填写宝贝链接</span>
+                </div>
+                <ol class="same over_">
+                    <li class="fl">
+                        <span class="block">优惠券价格：</span>
+                        <input type="text"/>元
+                    </li>
+                    <li class="fl">
+                        <span class="block">优惠券剩余数量：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">优惠券已领数量：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">淘口令：</span>
+                        <input type="text"/>
+                    </li>
+                </ol>
+                <div class="same about_shop">
+                    <span class="block">商品图片：</span>
+                    <input type="text"/>
+                    <span> <b>!</b>请填写宝贝地址</span>
+                </div>
+                <div class="same about_shop">
+                    <span class="block">商品名称：</span>
+                    <input type="text"/>
+                    <span> <b>!</b>请填写商品名称</span>
+                </div>
+                <div class="same about_shop">
+                    <span class="block">商品标签：</span>
+                    <input type="text"/>
+                    <button>自动获取</button>
+                </div>
+                <div class="same ms_time">
+                    <span class="block">开始时间：</span>
+                    <input type="date"/>
+                    <span> <b>!</b>请选择秒杀开始时间</span>
+                </div>
+                <div class="same ms_time">
+                    <span class="block">开始时间：</span>
+                    <input type="date"/>
+                    <span> <b>!</b>请选择秒杀结束时间</span>
+                </div>
+                <div class="same over_">
+                    <div class="fl">
+                        <label>所属分类：</label>
+                        <select name="">
+                            <option value="-1">--请选择--</option>
+                            <option value="0">--女装--</option>
+                            <option value="1">--男装--</option>
+                            <option value="2">--文体户外--</option>
+                        </select>
+                    </div>
+                    <div class="fl">
+                        <label>商品来源：</label>
+                        <select name="">
+                            <option value="-1">--淘宝--</option>
+                            <option value="0">--天猫--</option>
+                        </select>
+                    </div>
+                    <div class="fl">
+                        <label>是否包邮：</label>
+                        <select name="">
+                            <option value="-1">--不包邮--</option>
+                            <option value="0">--包邮--</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="same over_">
+                    <li class="fl">
+                        <span class="block">商品IID：</span>
+                        <input type="text"/>
+                        <span> <b>!</b>请填写id</span>
+                    </li>
+                    <li class="fl">
+                        <span class="block">30天销量：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">掌柜旺旺：</span>
+                        <input type="text"/>
+                        <span> <b>!</b>请填写掌柜</span>
+                    </li>
+                    <li class="fl">
+                        <span class="block">点击量：</span>
+                        <input type="text"/>
+                    </li>
+                    <li class="fl">
+                        <span class="block">商品价格：</span>
+                        <input type="text"/>元
+                        <span> <b>!</b>请填写原价</span>
+                    </li>
+                    <li class="fl">
+                        <span class="block">秒杀价格：</span>
+                        <input type="text"/>
+                        <span> <b>!</b>请填写秒杀价</span>
+                    </li>
+                </ul>
+                <div class="same about_shop">
+                    <form class='over'>
+                        <label class=''>商品介绍：</label>
+                        <textarea name=""cols="30" rows="5" class=""></textarea>
+                    </form>
+                </div>
+                <div class="same kind over">
+                    <span class="block fl">详细内容：</span>
+                    <form class="fl">
+                        <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+                    </form>
+                </div>
+                <div class="same over_">
+                    <div class="fl">
+                        <label>是否有优惠券：</label>
+                        <select name="">
+                            <option value="-1">否</option>
+                            <option value="0">是</option>
+                        </select>
+                    </div>
+                    <div class="fl">
+                        <span class="block">优惠券领取链接：</span>
+                        <input type="text"/>
+                    </div>
+                    <div class="fl">
+                        <span class="block">推广链接：</span>
+                        <input type="text"/>
+                        <button>自动获取</button>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="" class="block">确定</a>
+                </div>
+            </div>
+            <div id="soe" class="soe">
+                <div class="en">
+                    <span class="block">Title:</span>
+                    <input type="text"/>
+                </div>
+                <div class="en">
+                    <span class="block">Keywords:</span>
+                    <input type="text"/>
+                </div>
+                <div class="en">
+                    <span class="block">Description:</span>
+                    <textarea name=""  cols="30" rows=5></textarea>
+                </div>
+                <div class="btn">
+                    <a href="" class="block">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                allowFileManager : true
+            });
+            K('input[name=getHtml]').click(function(e) {
+                alert(editor.html());
+            });
+            K('input[name=isEmpty]').click(function(e) {
+                alert(editor.isEmpty());
+            });
+            K('input[name=getText]').click(function(e) {
+                alert(editor.text());
+            });
+            K('input[name=selectedHtml]').click(function(e) {
+                alert(editor.selectedHtml());
+            });
+            K('input[name=setHtml]').click(function(e) {
+                editor.html('<h3>Hello KindEditor</h3>');
+            });
+            K('input[name=setText]').click(function(e) {
+                editor.text('<h3>Hello KindEditor</h3>');
+            });
+            K('input[name=insertHtml]').click(function(e) {
+                editor.insertHtml('<strong>插入HTML</strong>');
+            });
+            K('input[name=appendHtml]').click(function(e) {
+                editor.appendHtml('<strong>添加HTML</strong>');
+            });
+            K('input[name=clear]').click(function(e) {
+                editor.html('');
+            });
+        });
+        $(function(){
+            $('p.set a').on('click',function(event){
+                event.preventDefault();
+                $(this).addClass('on').siblings().removeClass('on');
+                var id=$(this).attr('href');
+                $(id).show().siblings().hide();
+            })
+        })
+    </script>
+</body>
+</html>

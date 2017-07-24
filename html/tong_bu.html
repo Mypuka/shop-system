@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>代理商信息导入</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <!--<link rel="stylesheet" href="../css/edit_user.css"/>-->
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+    <style>
+        .container{
+            background:#fff;text-align: left;
+        }
+        p._head a{
+            padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+        }
+        p._head a.fr{
+            color:#232323;
+        }
+        td,th{
+            padding:10px 0;text-align: center;
+        }
+        .msg_head{
+            background:#FFFCED;padding:10px;margin-bottom: 10px;
+            border:1px solid #FFBE7A;text-align: left;
+        }
+        .msg_head input{
+            padding:3px 5px;
+        }
+        .msg_head button{
+            color: #f3f3f3;
+            background: #2F3B53;
+            border: 0;
+            padding:5px 10px;
+            margin: -1px 0 0 -4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="_head">
+            <a href="javascript:;" class="block">同步淘客后台广告位</a>
+            <a href="javascript:;" class="block fr">一键同步</a>
+        </p>
+        <!-- 导入内容展示-->
+        <div class="manage">
+            <!-- 头部搜索-->
+            <div class="msg_head over">
+                <label>广告位ID：</label>
+                <input type="text"/>
+                <button>搜索</button>
+            </div>
+            <!-- 导入内容table-->
+            <div class="msg_body">
+                <table border="0">
+                    <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="shop_list" class="checkAll" />
+                        </th>
+                        <th>广告位ID</th>
+                        <th>姓名</th>
+                        <th>微信号</th>
+                        <th>手机号</th>
+                        <th>职业</th>
+                        <th>分润比例</th>
+                        <th>总佣金</th>
+                        <th>佣率</th>
+                        <th>开始时间</th>
+                        <th>管理操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id='tbody'>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="shop_list" value="1" />
+                        </td>
+                        <td>65075063</td>
+                        <td>niki</td>
+                        <td>wei_xin123</td>
+                        <td>138******12</td>
+                        <td>兼职</td>
+                        <td>10%</td>
+                        <td>200</td>
+                        <td>20%</td>
+                        <td>2016-12-28</td>
+                        <td class="operate over">
+                            <a href="javascript:;" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="shop_list" value="1" />
+                        </td>
+                        <td>65089256</td>
+                        <td>niki</td>
+                        <td>wei_xin123</td>
+                        <td>138******12</td>
+                        <td>兼职</td>
+                        <td>10%</td>
+                        <td>200</td>
+                        <td>20%</td>
+                        <td>2016-12-28</td>
+                        <td class="operate over">
+                            <a href="javascript:;" class="edit_btn block">编辑</a>
+                            <a href="javascript:;" class="btn_close block">删除</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 底部 -->
+            <div class="foot over">
+                    <span class="block fl">
+                        <input type="checkbox" name="shop_list" class="checkAll"/>全选/取消
+                    </span>
+                <!--<button class="btn fl bg">状态</button>-->
+                <!--<button class="move_btn fl bg">移动</button>-->
+                <!--<button class="fl" id='selectBtn' disabled="disabled">删除</button>-->
+                <div class="fr over">
+                    <span class="block fl">90条记录</span>
+                    <span class="block fl">1/5页</span>
+                    <ul class="over">
+                        <li class="fl on">1</li>
+                        <li class="fl">2</li>
+                        <li class="fl">3</li>
+                        <li class="fl">4</li>
+                        <li class="fl">5</li>
+                        <li class="fl">下一布</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src='../js/table.js'></script>
+</body>
+</html>

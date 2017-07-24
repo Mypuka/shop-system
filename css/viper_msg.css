@@ -1,0 +1,63 @@
+.container{
+    background:#fff;text-align: left;
+}
+/*msg*/
+p._head a{
+    padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+}
+p._head a.fr{
+    color:#232323;
+}
+td,th{
+    padding:10px 0;text-align: center;
+}
+ul.msg_head{
+    background:#FFFCED;padding:10px;margin-bottom: 10px;
+    border:1px solid #FFBE7A;text-align: left;
+}
+ul.msg_head li{
+    margin-right: 15px;
+}
+ul.msg_head li:last-child{
+    margin:0;
+}
+ul.msg_head li input{
+    width:60px;padding:3px 5px;
+}
+ul.msg_head li:last-child input,ul.msg_head li.ad input{
+    width:100px;
+}
+/*edit*/
+.user_edit{
+    background:#cce8cc;text-align: left;display:none;
+}
+.user_edit ul li{
+    width:50%;padding:10px 0; border-bottom: 1px solid #D3D3D3;
+}
+.user_edit ul li input{
+    width:25%;padding:3px 5px;margin-left: 15px;
+}
+.user_edit ul li span{
+    width:26%;text-align: right;
+}
+.user_edit div.btn{
+    padding:10px 0;
+}
+.user_edit div.btn a{
+    font-size: 14px;color:#f3f3f3;background:#66CDAA;
+    padding:5px 35px;margin-left:6%;
+}
+div.kind{
+    padding:10px 0 10px 8%; border-bottom: 1px solid #D3D3D3;
+}
+div.kind span.block{
+    text-align: right;margin-right: 15px;
+    margin-top: 200px;
+}
+div.kind form{
+    width:80%;
+}
+.ke-container{
+    width:100%!important;
+}
+

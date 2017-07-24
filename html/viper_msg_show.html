@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>会员信息导入</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <style>
+        .container{
+            background:#fff;text-align: left;
+        }
+        td img{
+            width: 35px;
+        }
+        table{
+            text-align: center;
+        }
+        div.search{
+            background:#FFFCED;padding:10px;margin-bottom: 10px;
+            border:1px solid #FFBE7A;text-align: left;
+        }
+        div.search input{
+            padding:3px 5px;
+        }
+        div.search button{
+            color: #f3f3f3;
+            background: #2F3B53;
+            border: 0;
+            padding: 5px 10px;
+            margin: -1px 0 0 -4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="_head">
+            <a href="javascript:;" class="block">会员信息展现</a>
+        </p>
+        <div class="search">
+            <span class="block">关键字：</span>
+            <input type="text"/>
+            <button>搜索</button>
+        </div>
+        <table border="0">
+            <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" name="shop_list" class="checkAll" />
+                </th>
+                <th>ID</th>
+                <th>头像</th>
+                <th>用户名</th>
+                <th>性别</th>
+                <th>微信号</th>
+                <th>手机号</th>
+                <th>注册时间</th>
+                <th>最后登录</th>
+                <th>积分</th>
+                <th>管理操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox"  value="1" />
+                </td>
+                <td>1</td>
+                <td>
+                    <img src="../images/admin.png"/>
+                </td>
+                <td>
+                    <span>niki</span>
+                    <input type="text" style="display:none;"/>
+                    <i class="revise">&#xe624;</i>
+                </td>
+                <td>男</td>
+                <td>wei_xin123</td>
+                <td>138******12</td>
+                <td>2016-03-16</td>
+                <td>2016-12-30:18:56</td>
+                <td>
+                    <span>55</span>
+                    <input type="text" style="display:none;"/>
+                    <i class="revise">&#xe624;</i>
+                </td>
+                <td class="operate over">
+                    <a href="javascript:;" class="edit_btn block">编辑</a>
+                    <a href="javascript:;" class="btn_close block">删除</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <!-- 页脚-->
+        <div class="foot over">
+            <span class="block fl">
+                <input type="checkbox" class="checkAll"/>全选/取消
+            </span>
+            <!--<button class="btn fl bg">状态</button>-->
+            <!--<button class="move_btn fl bg">移动</button>-->
+            <button class="fl" id='selectBtn' disabled="disabled">删除</button>
+            <div class="fr over">
+                <span class="block fl">90条记录</span>
+                <span class="block fl">1/5页</span>
+                <ul class="over">
+                    <li class="fl on">1</li>
+                    <li class="fl">2</li>
+                    <li class="fl">3</li>
+                    <li class="fl">4</li>
+                    <li class="fl">5</li>
+                    <li class="fl">下一布</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function content(e){//修改
+            $('.revise').click(function(){
+                var me=$(this);
+                var span=me.siblings('span');
+                var val=span.html();
+                span.hide();
+                me.hide();
+                var input=me.siblings('input');
+                input.show().val(val).focus();
+                input.focusout(function(){
+                    var text=$(this).val();
+                    //console.log(text);
+                    $(this).hide();
+                    me.show();
+                    span.show().html(text);
+
+                })
+            })
+        });
+    </script>
+    <script src='../js/table.js'></script>
+</body>
+</html>

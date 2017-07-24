@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>优好货后台--阿里妈妈频道数据采集</title>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/default.css"/>
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh-CN.js"></script>
+    <style>
+        div.container{
+            background:#CCE8CC;text-align: left;
+        }
+        p._head{
+            text-align: left;padding:10px;border-bottom: 1px solid #EEEEEE;
+            margin-bottom: 10px;
+        }
+        p._head a{
+            padding:5px 10px;background:#71B7E6;color:#f3f3f3;font-size: 14px;border-radius: 3px;
+        }
+        li{
+            width:50%; padding:10px 0;border-bottom: 1px solid #D3D3D3;
+
+        }
+        li span.block{
+            width:29%;text-align: right;margin-right: 15px;
+        }
+        li input,li select{
+            padding:3px 5px;
+        }
+        div.btn{
+            padding:10px 0;
+        }
+        div.btn a{
+            font-size: 14px;color:#f3f3f3;background:#66CDAA;
+            padding:5px 35px;margin-left:8%;
+        }
+        div.about_shop{
+            padding:10px 0;border-bottom: 1px solid #D3D3D3;
+        }
+        div.about_shop span{
+            width:13%;text-align: right;margin-right: 15px;
+        }
+        div.about_shop textarea{
+            width:74%;padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="_head">
+            <a href="" class="block">采集商品数据</a>
+        </p>
+        <ol class="over">
+            <li class="fl">
+                <span class="block">所属分类：</span>
+                <select name="type">
+                    <option value="-1">--请选择--</option>
+                    <option value="0">女装</option>
+                    <option value="1">男装</option>
+                    <option value="2">家居</option>
+                    <option value="3">数码家电</option>
+                </select>
+            </li>
+            <li class="fl">
+                <span class="block">所属店铺：</span>
+                <select name="shop_name">
+                    <option value="-1">--请选择--</option>
+                    <option value="0">天猫商城</option>
+                    <option value="1">淘宝集市</option>
+                </select>
+            </li>
+            <li class="fl">
+                <span class="block">商品名称：</span>
+                <input type="text"/>
+            </li>
+            <li class="fl">
+                <span class="block">商品价格：</span>
+                <input type="text"/>
+            </li>
+            <li class="fl">
+                <span class="block">商品ID：</span>
+                <input type="text"/>
+            </li>
+            <li class="fl">
+                <span class="block">掌柜旺旺：</span>
+                <input type="text"/>
+            </li>
+            <li class="fl">
+                <span class="block">关键字：</span>
+                <input type="text"/>
+            </li>
+            <li class="fl">
+                <span class="block">是否包邮：</span>
+                <select>
+                    <option value="-1">--请选择--</option>
+                    <option value="0">--包邮--</option>
+                    <option value="1">--不包邮--</option>
+                </select>
+            </li>
+        </ol>
+        <div class="same about_shop">
+            <form class='over'>
+                <span class='block'>商品介绍：</span>
+                <textarea name=""cols="30" rows="5" class=""></textarea>
+            </form>
+        </div>
+        <div class="same kind over">
+            <span class="block fl">详细内容：</span>
+            <form class="fl">
+                <textarea name="content" style="width:500px;height:400px;visibility:hidden;">KindEditor</textarea>
+            </form>
+        </div>
+        <div class="btn">
+            <a href="" class="block">确定</a>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/share.js"></script>
+</body>
+</html>
